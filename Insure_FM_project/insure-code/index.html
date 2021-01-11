@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./app/scss/style.css">
+  <title>Frontend Mentor | Insure landing page</title>
+</head>
+<body class="body">
+  <header class="header">
+    <nav class="header__nav container container--px flex  flex-jc-sb">
+      <a class="header__logo flex-ai-c" href="#" >
+        <img src="./images/logo.svg" alt="INSURE">
+      </a>
+      <div class="header__links hide-for-tablet">
+        <a href="#">HOW WE WORK</a>
+        <a href="#">BLOG</a>
+        <a href="#">ACCOUNT</a>
+        <button class="btn-cta">
+          VIEW PLANS
+        </button>
+      </div>
+      <a href="#" id="btn-hamburger" class="header__toggle hide-for-desktop">
+        <div class="hamburger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </a>   
+  </nav>
+
+  <div class="header__menu hide-for-desktop">
+    <div class="links  container--px flex flex-fd-c flex-jc-c flex-ai-c">
+    <a href="#">HOW WE WORK</a>
+    <a href="#">BLOG</a>
+    <a href="#">ACCOUNT</a>
+    <button class="btn-mobile">
+      VIEW
+    </button>
+    </div>
+    <img class="header__menu-img" src="./images/bg-pattern-mobile-nav.svg" alt="wave">
+    </div>
+</header>
+
+<section class="hero">
+  <!-- bg wave patterns -->
+  <img class="hero__bg-right hide-for-tablet" src="./images/bg-pattern-intro-right-desktop.svg" alt="pattern">
+  <img class="hero__bg-left hide-for-tablet" src="./images/bg-pattern-intro-left-desktop.svg" alt="pattern" >
+  <!-- bg wave for tablet  -->
+<img class = " hero__mobile-bg-right" src="./images/bg-pattern-intro-right-mobile.svg" alt="waves">
+<img  class = "hero__mobile-bg-left" src="./images/bg-pattern-intro-left-mobile.svg" alt="waves"> 
+  <!-- flex for text and image -->
+  <div class="hero__content container--px">
+    <div class="hero__text">
+      <span class="hero__span"></span>
+      <p class="h-font hero__heading">Humanizing <br>your insurance.</p>
+      <p class="hero__para">
+        Get your life insurance coverage easier and faster. We blend our expertise
+        and technology to help you find the plan that’s right for you. Ensure you
+        and your loved ones are protected.
+      </p>
+      <button class="btn-cta-white">
+        VIEW PLANS
+      </button>
+    </div>
+    <div class="hero__image hide-for-tablet">
+      <img class="hero__image" src="./images/image-intro-desktop.jpg" alt="insure intro image">
+    </div>
+  </div>
+</section>
+
+ <section class="about container container--px">
+   <span class="about__span"></span>
+   <p class="h-font about__heading">We’re different</p>
+    <div class="about__features flex">
+      <div class="about__feature">
+        <img class = "feature-img" src="./images/icon-snappy-process.svg" alt="">
+        <p class="feature-title h-font">Snappy Process</p>
+        <p class="feature-text">Our application process can be completed in minutes, not hours. Don’t get
+        stuck filling in tedious forms.</p>
+      </div>
+      <div class="about__feature">
+        <img class="feature-img" src="./images/icon-affordable-prices.svg" alt="">
+        <p class="feature-title h-font">Affordable Prices</p>
+        <p class="feature-text">We don’t want you worrying about high monthly costs. Our prices may be low,
+        but we still offer the best coverage possible.</p>
+      </div>
+      <div class="about__feature">
+        <img class="feature-img" src="./images/icon-people-first.svg" alt="">
+        <p class="feature-title h-font">People First</p>
+        <p class="feature-text">Our plans aren’t full of conditions and clauses to prevent payouts. We make
+        sure you’re covered when you need it.</p>
+      </div>
+    </div>
+ </section>
+
+ <section class="work">
+   <div class="work__block container container--px">
+      <div class="flex-container flex flex-jc-sb flex-ai-c">
+        <div class="flex-item">
+        <p class="h-font work__heading">
+          Find out more about how we work
+        </p>
+       </div>
+       <div class="flex-item">
+         <button class="btn-cta-white">
+          How we work
+         </button>
+       </div>
+     </div>
+     
+
+   </div>
+
+ </section>
+ <footer class="footer">
+   <div class="footer__top container container--px flex flex-jc-sb">
+     <div class="footer__logo">
+      <a class="header__logo" href="#">
+        <img src="./images/logo.svg" alt="INSURE">
+      </a>
+      </div>
+      <div class="footer__socials">
+        <a href=""><img src="./images/icon-facebook.svg" alt="facebook"></a>
+        <a href=""><img src="./images/icon-twitter.svg" alt="twitter"></a>
+        <a href=""><img src="./images/icon-pinterest.svg" alt="pinterest"></a>
+        <a href=""><img src="./images/icon-instagram.svg" alt="instagram"></a>
+      </div> 
+   </div>
+
+   <div class="bottom container container--px">
+    <hr>
+    <div class="bottom__link-group flex flex-ai-c flex-jc-sb">
+      <div class="bottom__links">
+        <a href="#" class="link-title">OUR COMPANY</a>
+        <a href="#">HOW WE WORK</a>
+        <a href="#">WHY INSURE</a>
+        <a href="#">VIEW PLANS</a>
+        <a href="#">REVIEWS</a>
+      </div>
+      <div class="bottom__links">
+        <a href="#" class="link-title">HELP ME</a>
+        <a href="#">FAQ</a>
+        <a href="#">TERMS OF USE</a>
+        <a href="#">VPRIVACY POLICY</a>
+        <a href="#">COOKIES</a>
+      </div>
+      <div class="bottom__links">
+        <a href="#" class="link-title">CONTACT</a>
+        <a href="#">SALES</a>
+        <a href="#">SUPPORT</a>
+        <a href="#">LIVE CHAT</a>
+      </div>
+      <div class="bottom__links">
+        <a href="#" class="link-title">OTHERS</a>
+        <a href="#">CAREERS</a>
+        <a href="#">PRESS</a>
+        <a href="#">LICENSES</a>
+      </div>
+    </div>
+   </div>
+ </footer> 
+  <!-- 
+  
+
+  
+
+  FAQ
+  Terms of use
+  Privacy policy
+  Cookies
+
+  Contact
+
+  Sales
+  Support
+  Live chat
+
+  Others
+
+  Careers
+  Press
+  Licenses  -->
+
+
+  <div class="attribution flex flex-jc-c container--py">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://aakankshyashrestha.com.np" target="_blank">Aakankshya Shrestha</a>.
+  </div>
+  <script src="./app/js/script.js"></script>
+</body>
+</html>

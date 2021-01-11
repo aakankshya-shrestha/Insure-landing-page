@@ -1,0 +1,29 @@
+.work {
+  margin-bottom: 9.8rem;
+
+  .flex-container {
+    background-color: $darkViolet;
+    padding: 74px;
+
+    background-image: url("/images/bg-pattern-how-we-work-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    @include breakpoint-down(medium) {
+      background-image: url("/images/bg-pattern-how-we-work-mobile.svg");
+      background-repeat: no-repeat;
+      background-position: right top;
+      flex-direction: column;
+    }
+  }
+  &__heading {
+    color: $veryLightGray;
+    font-size: $font-lg;
+    @include breakpoint-down(medium) {
+      margin-bottom: 2.87rem;
+    }
+  }
+  &__bg-img {
+    position: relative;
+    right: 0;
+  }
+}

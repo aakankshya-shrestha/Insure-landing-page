@@ -1,0 +1,48 @@
+.btn-cta {
+  border: 1px solid $darkViolet;
+  background: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Karla", sans-serif;
+  transition: 250ms ease-in-out;
+  &:hover {
+    color: $veryLightGray;
+    background-color: $veryDarkViolet;
+  }
+}
+.btn-cta-white {
+  border: 1px solid $veryLightGray;
+  color: $veryLightGray;
+  background: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Karla", sans-serif;
+  transition: 250ms ease-in-out;
+  &:hover {
+    color: $veryDarkViolet;
+    background-color: $veryLightGray;
+  }
+
+  // @include breakpoint-down(medium) {
+  //   align-items: center;
+  //   text-align: center;
+  // }
+}
+.btn-mobile {
+  border: 1px solid $veryLightGray;
+  color: $veryLightGray;
+  background: none;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Karla", sans-serif;
+  width: 100%;
+  &:hover {
+    color: $grayishBlue;
+  }
+  @include breakpoint-up(medium) {
+    width: 80%;
+  }
+}

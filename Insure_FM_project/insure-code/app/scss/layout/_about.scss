@@ -1,0 +1,43 @@
+.about {
+  @include breakpoint-down(medium) {
+    text-align: center;
+  }
+  &__heading {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: $font-hero;
+    line-height: 1;
+    @include breakpoint-down(medium) {
+      text-align: center;
+      font-size: $font-xlg;
+    }
+  }
+  &__span {
+    margin-top: 22rem;
+    display: inline-block;
+    width: 155px;
+    height: 1px;
+    background-color: $darkViolet;
+    @include breakpoint-down(medium) {
+      margin-top: 8rem;
+    }
+  }
+  &__features {
+    gap: 40px;
+    margin-bottom: 9.8rem;
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+    }
+  }
+  &__feature {
+    @include breakpoint-down(medium) {
+      text-align: center;
+    }
+    padding: 10px;
+    .feature-title {
+      font-size: $font-lg;
+      margin-top: 2.9rem;
+      margin-bottom: 1.78rem;
+    }
+  }
+}

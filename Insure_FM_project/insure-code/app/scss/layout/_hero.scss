@@ -1,0 +1,91 @@
+.hero {
+  background-color: $darkViolet;
+  max-height: 40rem;
+
+  &__content {
+    padding-top: 105px;
+    display: flex;
+    padding-bottom: 105px;
+  }
+
+  &__text {
+    color: $veryLightGray;
+    @include breakpoint-down(medium) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__image {
+    img {
+      @include breakpoint-down(medium) {
+        width: 100vw;
+        height: auto;
+        padding: 0;
+      }
+    }
+  }
+
+  &__heading {
+    margin-top: 3rem;
+    font-size: $font-hero;
+    line-height: 1;
+    @include breakpoint-down(medium) {
+      font-size: $font-xlg;
+    }
+  }
+
+  &__para {
+    line-height: 1.5;
+    font-size: $font-small;
+    padding-right: 50px;
+  }
+
+  &__heading,
+  &__para {
+    margin-bottom: 2.5rem;
+    @include breakpoint-down(medium) {
+      text-align: center;
+    }
+  }
+
+  &__span {
+    display: block;
+    width: 155px;
+    height: 1px;
+    background-color: $veryLightGray;
+    @include breakpoint-down(medium) {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  &__bg-right {
+    position: absolute;
+    right: 0;
+  }
+
+  &__bg-left {
+    position: absolute;
+    left: 0;
+    top: 32rem;
+  }
+
+  &__mobile-bg-left {
+    position: absolute;
+    left: 0;
+
+    @include breakpoint-up(large) {
+      display: none;
+    }
+  }
+  &__mobile-bg-right {
+    position: absolute;
+    right: 0;
+    top: 32rem;
+
+    @include breakpoint-up(large) {
+      display: none;
+    }
+  }
+}
