@@ -24,11 +24,6 @@
     color: $veryDarkViolet;
     background-color: $veryLightGray;
   }
-
-  // @include breakpoint-down(medium) {
-  //   align-items: center;
-  //   text-align: center;
-  // }
 }
 .btn-mobile {
   border: 1px solid $veryLightGray;
